@@ -1,68 +1,68 @@
-#blog_post {
+#app {
   margin-top: 70px;
   /* new comment */ }
-  #blog_post .section_header input[type="text"] {
+  #app .section_header input[type="text"] {
     float: right;
     margin-top: 9px;
     background: url("../../img/search.png") white no-repeat 5px;
     padding-left: 28px;
     width: 18%;
     border-radius: 5px; }
-  #blog_post .post_pic {
+  #app .post_pic {
     border: 7px solid #fff;
     border-radius: 5px;
     box-shadow: 1px 1px 2px 1px #cfcfcf; }
-  #blog_post .post_content {
+  #app .post_content {
     margin-top: 40px;
     padding-bottom: 90px;
     border-bottom: 1px solid #cacaca;
     box-shadow: 0px 1px 0px 0px white; }
-    #blog_post .post_content h2 {
+    #app .post_content h2 {
       font-size: 32px;
       color: #3F3F3F;
       margin-bottom: 15px; }
-    #blog_post .post_content span.date {
+    #app .post_content span.date {
       width: 100%;
       font-size: 14px;
       font-style: italic;
       margin-bottom: 42px;
       display: block;
       color: #9C9C9C; }
-    #blog_post .post_content p {
+    #app .post_content p {
       line-height: 24px;
       margin-bottom: 15px; }
-    #blog_post .post_content .author_box {
+    #app .post_content .author_box {
       margin-top: 50px; }
-      #blog_post .post_content .author_box .author {
+      #app .post_content .author_box .author {
         margin-top: 45px;
         font-weight: bold;
         font-size: 15px;
         color: #1189D9; }
-      #blog_post .post_content .author_box .area {
+      #app .post_content .author_box .area {
         font-size: 15px;
         font-style: italic;
         margin-top: 5px;
         color: #9C9C9C; }
-  #blog_post .comments {
+  #app .comments {
     margin-top: 3px;
     padding-top: 50px;
     border-bottom: 1px solid #cacaca;
     box-shadow: 0px 1px 0px 0px white;
     padding-bottom: 3px; }
-    #blog_post .comments h4 {
+    #app .comments h4 {
       font-size: 23px;
       margin-top: 0;
       margin-bottom: 25px; }
-    #blog_post .comments .comment {
+    #app .comments .comment {
       margin-bottom: 60px;
       margin-top: 30px; }
-      #blog_post .comments .comment.reply_to {
+      #app .comments .comment.reply_to {
         margin-top: -10px; }
-      #blog_post .comments .comment .name {
+      #app .comments .comment .name {
         font-weight: bold;
         color: #3F3F3F;
         font-size: 14px; }
-      #blog_post .comments .comment a.reply {
+      #app .comments .comment a.reply {
         color: #1189D9;
         text-decoration: underline;
         margin-left: 20px;
@@ -71,29 +71,29 @@
         -moz-transition: color .2s;
         -ms-transition: color .2s;
         transition: color .2s; }
-        #blog_post .comments .comment a.reply:hover {
+        #app .comments .comment a.reply:hover {
           color: #252528; }
-      #blog_post .comments .comment .date {
+      #app .comments .comment .date {
         font-size: 13px;
         font-weight: bold;
         color: #747B85; }
-      #blog_post .comments .comment .response {
+      #app .comments .comment .response {
         margin-top: 10px;
         line-height: 22px;
         font-size: 14px; }
-  #blog_post .new_comment {
+  #app .new_comment {
     padding-top: 30px;
     margin-top: 3px; }
-    #blog_post .new_comment h4 {
+    #app .new_comment h4 {
       font-size: 23px;
       color: #3F3F3F; }
-    #blog_post .new_comment form {
+    #app .new_comment form {
       margin-top: 35px; }
-      #blog_post .new_comment form input[type="text"] {
+      #app .new_comment form input[type="text"] {
         border-radius: 3px; }
-      #blog_post .new_comment form textarea {
+      #app .new_comment form textarea {
         margin-top: 20px; }
-      #blog_post .new_comment form a.send {
+      #app .new_comment form a.send {
         float: right;
         color: #fff;
         border: 0 none;
@@ -109,86 +109,86 @@
         -moz-transition: background linear .2s, box-shadow linear .2s;
         -o-transition: background linear .2s, box-shadow linear .2s;
         transition: background linear .2s, box-shadow linear .2s; }
-        #blog_post .new_comment form a.send:hover {
+        #app .new_comment form a.send:hover {
           background: #252528; }
-  #blog_post .sidebar {
+  #app .sidebar {
     margin: 0;
     padding: 40px 19px 40px 28px;
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 1px 3px 1px #cfcfcf;
     float: right; }
-    #blog_post .sidebar .box {
+    #app .sidebar .box {
       padding-bottom: 30px;
       overflow: hidden;
       margin-bottom: 40px;
       border-bottom: 1px solid #d8d8d8; }
-    #blog_post .sidebar .last {
+    #app .sidebar .last {
       border: 0 none;
       padding: 0;
       margin-bottom: 0; }
-    #blog_post .sidebar .box .recent {
+    #app .sidebar .box .recent {
       width: 100%;
       margin-bottom: 20px;
       float: left; }
-      #blog_post .sidebar .box .recent span img {
+      #app .sidebar .box .recent span img {
         float: left;
         margin-right: 10px; }
-      #blog_post .sidebar .box .recent p {
+      #app .sidebar .box .recent p {
         margin: 0;
         line-height: 18px;
         font-size: 13px; }
-    #blog_post .sidebar .sidebar_header {
+    #app .sidebar .sidebar_header {
       margin-bottom: 20px; }
-      #blog_post .sidebar .sidebar_header h4 {
+      #app .sidebar .sidebar_header h4 {
         font-size: 19px;
         margin: 0; }
-    #blog_post .sidebar .sidebar_menu {
+    #app .sidebar .sidebar_menu {
       list-style-type: none;
       margin-left: 0px;
       padding: 0; }
-      #blog_post .sidebar .sidebar_menu ul {
+      #app .sidebar .sidebar_menu ul {
         margin: 0;
         padding: 0;
         list-style: none; }
-        #blog_post .sidebar .sidebar_menu ul li {
+        #app .sidebar .sidebar_menu ul li {
           margin-bottom: 6px; }
-          #blog_post .sidebar .sidebar_menu ul li a {
+          #app .sidebar .sidebar_menu ul li a {
             color: #333;
             font-size: 14px;
             -webkit-transition: color .2s;
             -moz-transition: color .2s;
             -ms-transition: color .2s;
             transition: color .2s; }
-            #blog_post .sidebar .sidebar_menu ul li a:hover {
+            #app .sidebar .sidebar_menu ul li a:hover {
               color: #1187D8; }
-    #blog_post .sidebar .recent_posts {
+    #app .sidebar .recent_posts {
       list-style-type: none;
       margin-top: 30px;
       margin-left: 0px; }
-      #blog_post .sidebar .recent_posts li {
+      #app .sidebar .recent_posts li {
         margin-bottom: 20px;
         font-size: 15px; }
-      #blog_post .sidebar .recent_posts .thumb {
+      #app .sidebar .recent_posts .thumb {
         border: 3px solid #fff;
         box-shadow: 0px 0px 1px 1px #bdbdbd; }
-      #blog_post .sidebar .recent_posts a.link {
+      #app .sidebar .recent_posts a.link {
         color: #333;
         display: block;
         margin-top: 10px; }
-        #blog_post .sidebar .recent_posts a.link:hover {
+        #app .sidebar .recent_posts a.link:hover {
           color: #87a46e;
           text-decoration: underline; }
-    #blog_post .sidebar ul.recent_photos {
+    #app .sidebar ul.recent_photos {
       list-style-type: none;
       margin-left: 0px;
       padding: 18px 0 0 0; }
-      #blog_post .sidebar ul.recent_photos li {
+      #app .sidebar ul.recent_photos li {
         list-style: none;
         display: inline-block;
         margin-right: 14px;
         margin-bottom: 11px; }
-        #blog_post .sidebar ul.recent_photos li a img {
+        #app .sidebar ul.recent_photos li a img {
           max-width: 55px;
           border-radius: 3px; }
 
@@ -207,11 +207,11 @@
   #blog_wrapper .sidebar .recent_posts .thumb {
     max-width: 100px; }
 
-  #blog_post .sidebar ul.recent_photos li {
+  #app .sidebar ul.recent_photos li {
     margin-right: 15px; }
-  #blog_post .new_comment form input[type="text"] {
+  #app .new_comment form input[type="text"] {
     margin-top: 10px; }
-  #blog_post .new_comment form a.send {
+  #app .new_comment form a.send {
     margin-bottom: 20px; } }
 @media (min-width: 768px) {
   #blog_wrapper .sidebar .search-query {

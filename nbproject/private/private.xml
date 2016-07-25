@@ -3,21 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/vendor/friendsofsymfony/user-bundle/Resources/config/registration.xml</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Resetting/checkEmail.html.twig</file>
             <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/views/layout/layout.html.twig</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/vendor/friendsofsymfony/user-bundle/Resources/config/routing/security.xml</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Resetting/passwordAlreadyRequested.html.twig</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/ChangePassword/changePassword_content.html.twig</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Security/login.html.twig</file>
             <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/src/UtilisateursBundle/Controller/RegistrationController.php</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Resetting/request.html.twig</file>
             <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/src/UtilisateursBundle/Resources/views/Default/modulesUsed/utilisateurs.html.twig</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/config/config_dev.yml</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/src/UtilisateursBundle/UtilisateursBundle.php</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig</file>
             <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/src/UtilisateursBundle/Resources/views/Default/modulesUsed/utilisateursConnecte.html.twig</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/src/UtilisateursBundle/Controller/DefaultController.php</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/config/config.yml</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/layout.html.twig</file>
             <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/views/moduleUsed/navigation.html.twig</file>
-            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/vendor/friendsofsymfony/user-bundle/Resources/config/routing/all.xml</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/web/css/compiled/theme.css</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Registration/register.html.twig</file>
+            <file>file:/Users/petzy56/Documents/workspace/symfony/JeGere/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig</file>
         </group>
     </open-files>
 </project-private>

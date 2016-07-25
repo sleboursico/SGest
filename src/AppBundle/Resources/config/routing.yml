@@ -1,0 +1,3 @@
+routingExercice:
+  resource: "@AppBundle/Resources/config/routing/routingExercice.yml"
+  prefix: /exercice

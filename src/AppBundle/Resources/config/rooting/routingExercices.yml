@@ -1,0 +1,3 @@
+exercice:
+    pattern:  /
+    defaults: { _controller: AppBundle:Exercices:exercice }

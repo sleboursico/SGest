@@ -1,0 +1,28 @@
+{% extends "::layout/layout.html.twig" %}        
+
+{% block body %}
+<div class="container">
+    {% for type, messages in app.session.flashbag.all() %}
+        {% for message in messages %}
+            <div class="alert alert-{{ type }}">
+                <strong>{{ message }}</strong>
+            </div>
+        {% endfor %}
+    {% endfor %}
+    <div id="app">
+    <div class="row">
+        <div class="col-sm-4">
+            {% block menu_gauche %}
+            {% endblock menu_gauche %}
+        </div>
+
+
+
+        <div class="col-sm-8">
+            {% block contenu %}
+            {% endblock contenu %}
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
