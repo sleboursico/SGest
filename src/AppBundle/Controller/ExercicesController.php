@@ -3,8 +3,8 @@
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 
 class ExercicesController extends Controller {
 
@@ -18,6 +18,30 @@ class ExercicesController extends Controller {
              return $this->render('AppBundle:exercice:dashboard.html.twig');
         }
         return $this->render('AppBundle:Default:index.html.twig');
+    }
+
+    /**
+     * @Route("/exercice")
+     * @Method({"GET"})
+     */
+    public function creerAction() 
+    {
+        $arianes = array(
+            0 => [
+                "libelle" => "Exercice",
+                "lien" => "/exercice"         
+            ]
+        );
+        return $this->render('AppBundle:exercice:create.html.twig', array('arianes' => $arianes));
+    }
+
+    /**
+     * @Route("/exercice/{id}")
+     * @Method({"GET"})
+     */
+    public function editAction() 
+    {
+             return $this->render('AppBundle:exercice:edit.html.twig');
     }
 
 }

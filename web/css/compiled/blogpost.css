@@ -1,5 +1,4 @@
 #app {
-  margin-top: 70px;
   /* new comment */ }
   #app .section_header input[type="text"] {
     float: right;
@@ -127,6 +126,9 @@
       border: 0 none;
       padding: 0;
       margin-bottom: 0; }
+    #app .sidebar img {
+      margin-right: 5px;
+    }
     #app .sidebar .box .recent {
       width: 100%;
       margin-bottom: 20px;

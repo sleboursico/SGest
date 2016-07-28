@@ -1,28 +1,78 @@
 {% extends "::layout/layout.html.twig" %}        
 
 {% block body %}
-<div class="container">
-    {% for type, messages in app.session.flashbag.all() %}
-        {% for message in messages %}
-            <div class="alert alert-{{ type }}">
-                <strong>{{ message }}</strong>
-            </div>
+    <div class="container">
+    {{ knp_menu_render('breadcrumb',{'currentAsLink':false}) }}
+        {% for type, messages in app.session.flashbag.all() %}
+            {% for message in messages %}
+                <div class="alert alert-{{ type }}">
+                    <strong>{{ message }}</strong>
+                </div>
+            {% endfor %}
         {% endfor %}
-    {% endfor %}
-    <div id="app">
-    <div class="row">
-        <div class="col-sm-4">
-            {% block menu_gauche %}
-            {% endblock menu_gauche %}
-        </div>
+        <div id="app">
+            <div class="row">
+                <div class="col-sm-3">
+                        <div class="sidebar">
+                            <div class="box box2">
+                                <div class="sidebar_header">
+                                    <h4>Clients</h4>
+                                </div>
+
+                                <ul class="sidebar_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><img src="{{ asset('img/icons/creer_fiche.png')}}" alt="">Nouvelle fiche client</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="{{ asset('img/icons/liste_clients.png')}}" alt="">Liste des fiches</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+
+                            <div class="box">
+                                <div class="sidebar_header">
+                                    <h4>Comptabilité</h4>
+                                </div>
+
+                                <ul class="sidebar_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="/exercice"><img src="{{ asset('img/icons/creer_exercice.png')}}" alt="">Nouvel exercice</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="{{ asset('img/icons/liste_exercices.png')}}" alt="">Liste des exercices</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+
+
+                            <div class="box last">
+                                <div class="sidebar_header">
+                                    <h4>Autres</h4>
+                                </div>
+
+                                <ul class="sidebar_menu">
+                                    <ul>
+                                        <li><a href="#">January 2012</a></li>
+                                        <li><a href="#">May 2012</a></li>
+                                        <li><a href="#">August 2011</a></li>
+                                        <li><a href="#">October 2011</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
 
 
 
-        <div class="col-sm-8">
-            {% block contenu %}
-            {% endblock contenu %}
+                <div class="col-sm-9">
+                    {% block contenu %}
+                    {% endblock contenu %}
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-</div>
 {% endblock %}

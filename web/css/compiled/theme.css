@@ -72,8 +72,6 @@ header {
       margin-top: 0px !important;
       margin-bottom: 0px !important; }
   .navbar .container {
-    margin-top: 10px;
-    margin-bottom: 10px;
     -webkit-transition: margin .2s ease-in-out;
     -moz-transition: margin .2s ease-in-out;
     transition: margin .2s ease-in-out; }
@@ -357,3 +355,41 @@ header {
         margin: 0 30px 0 0; }
   #footer .credits {
     margin-top: 20px; } }
+
+
+/* FIL D ARIANNE */
+
+#breadcrumb {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font: 11px Arial, Helvetica, sans-serif;
+    height:30px;
+    line-height:20px;
+    color:#9b9b9b;
+    width:100%;
+    overflow:hidden;
+    margin:0px 0 10px 0;
+    padding:0px;
+}
+#breadcrumb li 
+{
+    list-style:none;
+    float:left;
+    padding-left:10px;
+}
+#breadcrumb a
+{
+    height:20px;
+    display:block;
+    background-image:url('../../img/icons/bc_separator.png');
+    background-repeat:no-repeat;
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+    color:#454545;
+}
+#breadcrumb .home {
+    border:none;
+    margin: 2px 0px;
+}

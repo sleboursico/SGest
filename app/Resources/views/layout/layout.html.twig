@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html" class="navbar-brand"><strong>SGest</strong></a>
+                <a href="/" class="navbar-brand"><strong>{{ 'application.name'|trans }}</strong></a>
             </div>
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                 {% include 'UtilisateursBundle:Default:modulesUsed/utilisateursConnecte.html.twig' %}   
@@ -46,7 +46,7 @@
     </div>
 
 
-<div style="margin-top:40px">
+<div style="margin-top:100px">
         {% block body %}{% endblock %}
 </div>
     <!-- starts footer -->

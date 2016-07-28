@@ -1,0 +1,10 @@
+<ul id="breadcrumb">
+	<li><a href="/" title="Home"><img src="{{asset('img/icons/home.png')}}" alt="Home" class="home"></a></li>
+        {% if arianes %}
+            {% if arianes|length != 0 %}
+                {% for ariane in arianes %}
+                    <a href="{{ ariane.lien }}" title="Accueil">{{ ariane.libelle }}</a>
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+</ul>

@@ -2,26 +2,17 @@ parameters:
 #    ecommerce.example.class: Ecommerce\EcommerceBundle\Example
 
 services:
-    setNewFacture:
-      class: Ecommerce\EcommerceBundle\Services\GetFacture
-      arguments: [@service_container]
-  
-    setNewReference:
-      class: Ecommerce\EcommerceBundle\Services\GetReference
-      arguments: [@security.context, @doctrine.orm.entity_manager]
-    
-    tva:
-      class: Ecommerce\EcommerceBundle\Twig\Extension\TvaExtension
-      tags:
-        - { name: twig.extension }
+    # le service de constructeur de menus. Peut servir à créer plusieurs menus
+    menu_builder:
+        class: AppBundle\Menu\MenuBuilder
+        arguments: ["@knp_menu.factory"]
 
-    montantTva:
-      class: Ecommerce\EcommerceBundle\Twig\Extension\MontantTvaExtension
-      tags:
-        - { name: twig.extension }
-
-    redirectionListener:
-      class: Ecommerce\EcommerceBundle\Listener\RedirectionListener
-      arguments: [@service_container,@session]
-      tags:
-        - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+    # votre menu
+    menu.breadcrumb:
+        class: Knp\Menu\MenuItem
+        factory_service: menu_builder # le service du constructeur vu juste au-dessus
+        factory_method: createBreadcrumbMenu # la méthode appelée pour générer le menu
+        arguments: ["@request"]
+        scope: request
+        tags:
+            - { name: knp_menu.menu, alias: breadcrumb } # L'alias est utilisé dans le template
